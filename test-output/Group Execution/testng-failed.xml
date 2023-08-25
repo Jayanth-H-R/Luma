@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Group Execution]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Integration Test(failed)">
+    <groups>
+      <run>
+        <include name="IT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.luma.qspiders.endtoendtest.LumaTestCase">
+        <methods>
+          <include name="LumaWishListToCartCheck"/>
+          <include name="lumaCompareProducts"/>
+          <include name="ProductRemoving"/>
+          <include name="menSectionCart"/>
+        </methods>
+      </class> <!-- com.luma.qspiders.endtoendtest.LumaTestCase -->
+    </classes>
+  </test> <!-- Integration Test(failed) -->
+</suite> <!-- Failed suite [Group Execution] -->
