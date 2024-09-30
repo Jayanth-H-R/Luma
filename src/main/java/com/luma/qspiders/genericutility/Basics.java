@@ -20,11 +20,12 @@ public class Basics {
 	public WebDriver driver;
 	public FileUtility1 fileUtils = new FileUtility1();
 	public WebDriverUtility1 webDriverUtils = new WebDriverUtility1();
-
+	
+	@Parameters({"browserName"})
 	@BeforeClass()
 	
-	public void configureBeforeClass() throws IOException {
-		String browserName = fileUtils.toReadData("browser");
+	public void configureBeforeClass(String browserName) throws IOException {
+		//String browserName = fileUtils.toReadData("browser");
 		String url = fileUtils.toReadData("url");
 		if (browserName.equals("chrome")) {
 			driver = new ChromeDriver();

@@ -62,5 +62,13 @@ public class WebDriverUtility1 {
 			boolean validation = wait.until(ExpectedConditions.textToBePresentInElement(ele, tagText));
 			return validation;
 		}
+		
+		public WebElement elementIsClickable(WebElement element, WebDriver driver) {
+			WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+			WebElement validation = wait.until(ExpectedConditions.elementToBeClickable(element));
+			return validation;
+		}
+		
+		
 	}
 

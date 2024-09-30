@@ -6,11 +6,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LumaHomePage {
-	WebDriver driver;
+	public WebDriver driver;
 
 	public LumaHomePage(WebDriver driver) {
 		this.driver = driver;
-		PageFactory.initElements(driver, this);;
+		PageFactory.initElements(driver, this);
 	}
 
 	@FindBy(xpath = "//div[@class='panel header']//a[contains(.,'Sign In')]")

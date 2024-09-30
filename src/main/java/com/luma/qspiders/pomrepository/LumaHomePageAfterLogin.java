@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import net.bytebuddy.asm.MemberSubstitution.FieldValue;
-
 public class LumaHomePageAfterLogin {
 	WebDriver driver;
 
@@ -41,6 +39,13 @@ public class LumaHomePageAfterLogin {
 	
 	@FindBy(xpath = "//a[.='Bags']")
 	private WebElement bagsOption;
+	
+	@FindBy(className = "ea-stickybox-hide")
+	private WebElement hiddenDivPopup;
+
+	public WebElement getHiddenDivPopup() {
+		return hiddenDivPopup;
+	}
 
 	public WebElement getBagsOption() {
 		return bagsOption;

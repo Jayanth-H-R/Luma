@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.luma.qspiders.endtoendtest.LumaTestCase">
+      <class name="com.luma.qspiders.endtoendtest.DataDrivenTest">
         <methods>
-          <include name="configureAfterMethod"/>
-          <include name="configureBeforeMethod"/>
-          <include name="configureAfterClass"/>
-          <include name="configureBeforeClass"/>
-          <include name="homePageCheck"/>
+          <include name="loginMultiUser" invocation-numbers="1 2 3 4"/>
         </methods>
-      </class> <!-- com.luma.qspiders.endtoendtest.LumaTestCase -->
+      </class> <!-- com.luma.qspiders.endtoendtest.DataDrivenTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

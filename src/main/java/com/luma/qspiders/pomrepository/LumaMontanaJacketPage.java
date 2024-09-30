@@ -22,8 +22,10 @@ public class LumaMontanaJacketPage {
 	@FindBy(id = "product-addtocart-button")
 	private WebElement addToCartButton;
 
-	@FindBy(xpath = "//div[@class='items-total']/span")
+	@FindBy(className = "count")
 	private WebElement itemsInCart;
+	//div[@class='items-total']/span
+	//span[@class='count']
 
 	@FindBy(xpath = "//span[text()='Remove']/..")
 	private WebElement removeFromCartOption;
