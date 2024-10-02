@@ -68,8 +68,8 @@ public class LumaTestCase extends Basics {
 		// actions.click(montanaJacketPage.getRemoveFromCartOption()).pause(2000).perform();
 		webDriverUtils.elementIsClickable(montanaJacketPage.getPermissionOkButton(), driver).click();
 		// actions.click(montanaJacketPage.getPermissionOkButton()).perform();
-		soft.assertAll();
 		System.out.println("menSectionCart executed");
+		soft.assertAll();
 
 	}
 
@@ -104,7 +104,7 @@ public class LumaTestCase extends Basics {
 		System.out.println("searchProductWishlist executed");
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void lumaCompareProducts() throws IOException, InterruptedException {
 		webDriverUtils.implicitWaitInMillis(driver);
 		Actions actions = new Actions(driver);
@@ -156,7 +156,7 @@ public class LumaTestCase extends Basics {
 		System.out.println("lumaCompareProducts executed");
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void lumaWishListToCartCheck() throws IOException {
 		webDriverUtils.implicitWaitInSeconds(driver);
 		Actions actions = new Actions(driver);
@@ -273,7 +273,7 @@ public class LumaTestCase extends Basics {
 		}
 	}
 
-	@Test()
+	@Test(enabled = false)
 	public void handleHiddenDivPopup() {
 		webDriverUtils.implicitWaitInSeconds(driver);
 		LumaHomePageAfterLogin homePageAfterLogin = new LumaHomePageAfterLogin(driver);

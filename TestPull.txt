@@ -1,1 +1,2 @@
-"Pulling Files from remote reposoitory to local repository(git) ---> our local work space
+"Pulling Files from remote reposoitory to local repository(git) ---> our local work space"
+"Pushing the modified code back to remote repository from local workspace to local repo(Git) ---> Remoterepository"
